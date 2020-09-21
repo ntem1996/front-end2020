@@ -14,18 +14,16 @@ nav>img {
   max-width: 7em;
 }
 
-input {
+nav>form>input {
 padding:6px;
 background-color: lightsteelblue;
-
-background-color: ;
 width: 100%;
 font-weight: bold;
 border: none;
 
 }
 
-ul {
+section>ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -33,10 +31,11 @@ ul {
     margin: 0.5em;
     min-width: max-content;
     padding-left: 0;
+    
 
 }
 
-li {
+section>ul>li {
 box-sizing: border-box;
   border: solid 1px black;
 padding: 0.1em;
@@ -46,7 +45,7 @@ margin-bottom: 10px;
 
 }
 
-button {
+li>button {
   border: none;
   background: white;
   font-size: 0.7em;
@@ -59,30 +58,248 @@ section:first-of-type {
 
 }
 
-div:first-of-type {
+div:nth-child(1) {
 
   height: 20em;
   position: relative;
-  
   margin-bottom: -4em;
-
+  left: -10px;
  
-
 }
 section>div>img:first-of-type{
-  
-  max-width: 35em;
-  padding-top: 3em;
-  position: absolute;
-  left: -5em;
-  top: 0;
-  bottom: 0;
-
-
-
+  max-width: 22em;
  
 }
 
+h3 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 0.8em;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1em;
+  }
+section:first-of-type {
+  position: relative;
+}
+  section>button:first-of-type{
+    display: flex;
+    margin:auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: solid 1px black;
+    font-size: 0.6em;
+  font-weight: bold;
+  padding: 1em;
+  text-transform:capitalize;
+  margin-bottom: 2em;
+
+  }
+
+  section>img:nth-child(1) {
+    height: 22em;
+    position: relative;
+    margin-bottom: -4em;
+    left: -10px;
+  }
+
+section>div>h3:nth-child(1) {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 3.5em;
+}
+
+section>div>p:nth-child(2) {
+  font-style: italic;
+  font-size: 0.7em;
+  margin-bottom: 1em;
+}
+
+section>div>button:nth-child(3) {
+ display: flex;
+  margin:auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: solid 1px black;
+  font-size: 0.6em;
+font-weight: bold;
+padding: 0.8em;
+text-transform:capitalize;
+margin-bottom: -2em;
+}
+
+
+
+article:first-of-type {
+  position: relative;
+  display: flex;
+  background-color: #EFEEEA;
+  height: 23em;
+  margin-top: 2em;
+  overflow: hidden;
+  width: 22em;
+  margin-bottom: 2em;
+  margin-left: -10px;
+  margin-right: 0;
+  width: 100%;
+
+}
+
+article>div>ul {
+  display: flex; 
+  flex-wrap: wrap;
+  list-style: none;
+  
+}
+
+article>div>ul>li {
+flex-basis: ;
+
+
+}
+article>div>ul>li>img {
+
+  justify-content: space-between;
+  align-items: center;
+  width: 8em;
+  display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding: 0.2em;
+   
+  
+}
+
+article>div>ul>li>p {
+  display: flex;
+text-align: center;
+  align-items: center;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  margin: 0;  
+}
+
+article>div>ul>li>button {
+position: relative;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.6em;
+  font-weight: bold;
+  text-decoration: underline;
+  background-color:transparent;
+  margin-top: 0; 
+  margin-bottom: 2em;
+  
+
+}
+
+section:nth-of-type(4) {
+  height: 17em;
+  position: relative;
+  margin-bottom: -4em;
+  left: -10px;
+}
+
+section:nth-of-type(4)>img {
+  height: 17em;
+  max-width: 22em;
+
+}
+
+
+section:nth-of-type(4)>h3 {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 3.5em;
+}
+
+section:nth-of-type(4)>p {
+  font-style: italic;
+  font-size: 0.7em;
+  margin-bottom: 1em;
+}
+
+footer {
+  background-color:whitesmoke;
+}
+
+footer>div:first-of-type {
+ 
+}
+
+footer>ul {
+  display: flex; 
+  flex-wrap: wrap;
+  list-style: none;
+  margin-top: 12em;
+  padding-top: 2em;
+  
+}
+
+footer>ul>li {
+ 
+  flex-grow: 1;
+
+}
+footer>ul>li>img {
+  width: 7em;
+margin-left: -2em;
+  
+}
+
+footer>div>h6 {
+text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+  font-size: 14px;
+
+}
+
+footer>div>p {
+font-size: 10px;
+padding-top: 1em;
+text-align: left;
+
+}
+
+footer>section {
+  margin-left:1em;
+  margin-right: 3em;
+  background: white;
+  padding:0.3em;
+}
+
+footer>section>h5 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+footer>section>p {
+  color: lightgrey;
+  font-size: 10px;
+  margin-top: 0;
+  margin-left: 15px;  
+}
+
+footer>section>form>input {
+  background-color: lightgrey;
+  padding:6px;
+  margin-top:10px;
+  margin-bottom: 10px;
+width: 100%;
+font-weight: bold;
+border: none;
+}
 /*  
 
 #logo{
